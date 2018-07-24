@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 		navigation: true,
 		navigationPosition: 'right',
 		showActiveTooltip: false,
-		slidesNavigation: false,
+		slidesNavigation: true,
 		controlArrows: false,
 		resize: true,		//字体缩放
 		loopHorizontal: true,		//横向循环
@@ -38,9 +38,9 @@ jQuery(document).ready(function($) {
 					p1Animat(true);
 					break;
 				case 1:
-					setInterval(function () {
-						$.fn.fullpage.moveSlideRight();
-					},4000)
+					// setInterval(function () {
+					// 	$.fn.fullpage.moveSlideRight();
+					// },4000)
 				 	break;
 				case 2:
 					p3Animat(true);
@@ -232,6 +232,7 @@ jQuery(document).ready(function($) {
 		}else {
 			var s1c = $(".s1>.w").children();
 			// console.log(s1c)
+			Animat(s1c[0],"fadeIn",0);
 			Animat(s1c[3],"fadeInLeft",0);
 			Animat(s1c[4],"fadeInUp",500);
 			Animat(s1c[5],"fadeInUp",1000);
