@@ -1,0 +1,29 @@
+body {
+	font-size: 14px;
+	color: #050505;
+	background-color: #f3f5f7;
+	/* box-sizing: border-box; */
+	/* height: 3000px; */
+}
+a {
+	color: #666;
+}
+.shadow {
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.shadow-item {
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.trans {
+	transition: all 0.4s;
+}
+.w {
+	width: 1200px;
+	/* margin: 0 auto; */
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}

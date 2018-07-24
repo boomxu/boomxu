@@ -1,0 +1,380 @@
+/* <!-- header start  --> */
+header {
+	/* background-color: pink; */
+	height: 100px;
+	width: 1300px;
+	margin: 0 auto ;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+.logo {
+	width: 195px;
+	height: 42px;
+	/* background-color: skyblue; */
+	line-height: 0;
+	font-size: 0;
+}
+.logo a {
+	display: block;
+	width: 195px;
+	height: 42px;
+	background: url('../images/logo.png') no-repeat ;
+}
+
+.nav {
+	margin-left: 10px;
+	float: left;
+	/* line-height: 90px; */
+}
+.nav li {
+	float: left;
+	/* padding-right: 40px; */
+	margin-left: 25px;
+	height: 40px;
+}
+.nav li a {
+	font-size: 18px;
+	color: #050505;
+	line-height: 40px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
+.nav li a:hover {
+	border-bottom: 2px solid #0024ff;
+}
+
+.user {
+	/* width: 80px; */
+	height: 40px;
+	/* background-color: purple; */
+	text-align: center;
+}
+.user dt {
+	margin-left: 30px;
+}
+.user a {
+	line-height: 40px;
+
+}
+.fa-bell {
+	padding: 0 30px ;
+	position: relative;
+}
+.fa-bell::after {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: -4px;
+	right: 22px;
+}
+.user dt,.user dd {
+	display: inline-block;
+}
+.user span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 2px;
+	/* width: 33px;
+	height: 33px; */
+}
+.user img {
+	border-radius: 50%;
+}
+.search {
+	/* line-height: 100px; */
+}
+.search input {
+	width: 360px;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #00a4ff ;
+	padding: 10px;
+	color: #bfbfbf;
+	font-size: 14px;
+}
+.search button {
+	/* content: ""; */
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	background-color: #00a4ff;
+	text-align: center;
+	/* line-height: 100px; */
+	margin-left: -5px;
+	color: #fff;
+}
+
+	/* <!-- banner start  --> */
+.banner {
+	height: 420px;
+	background-color: #1c036c;
+	/* margin-bottom: 8px; */
+
+}
+.banner-inner {
+	height: 420px;
+	background: url('../images/banner.jpg') no-repeat;
+	position: relative;
+	margin: 0 auto 0;
+}
+.nav-l ul {
+	display: inline-block;
+	width: 190px;
+	height: 420px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 0 20px 0 20px;
+}
+.nav-l li {
+	margin-top: 25px;
+	/* display: inline-block; */
+}
+.nav-l li a {
+	font-size: 14px;
+	color: #fff;
+	float: left;
+}
+.fa-chevron-right {
+	font-size: 14px;
+	color: #fff;
+}
+
+.box-r {
+	margin-top: 50px;
+	width: 228px;
+	height: 300px;
+	background-color: #fff;
+	padding: 50px 14px 0;
+	position: relative;
+}
+.box-r dt {
+	width: 100%;
+	height: 50px;
+	background-color: #9bceea;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 48px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.box-r dd {
+	height: 60px;
+	padding: 0 5px;
+	text-align: left;
+	/* line-height: 60px; */
+	/* background-color: skyblue; */
+}
+.box-r .dd-f {
+	margin-top: 10px;
+}
+.box-r span {
+	display: block;
+}
+.box-r .dd-t {
+	margin-top: 12px;
+	font-size: 16px;
+	color: #4e4e4e;
+}
+.box-r .dd-st {
+	font-size: 12px;
+	color: #a5a5a5;
+}
+.box-r .dd-s {
+	border-top: 1px solid #ccc ;
+	border-bottom: 1px solid #ccc ;
+}
+.box-r .dd-l {
+	height: 40px;
+	width: 200px;
+	border: 2px solid #00a4ff ;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 40px;
+	color: #00a4ff;
+	cursor: pointer;
+}
+.pot {
+	height: 20px;
+	width: 175px;
+	/* background-color: #fff; */
+	position: absolute;
+	left: 50%;
+	margin-left: -88px;
+	bottom: 15px;
+}
+.pot i {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: rgba(255, 255, 255, .4);
+	margin: 0 5px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.pot i:hover {
+	width: 22px;
+	background-color: #fff;
+}
+
+	/* <!-- subnav start --> */
+.subnav {
+	display: block;
+	margin: 10px auto 0;
+	/* margin-top: 8px; */   /* 这里margin无效，不知道是什么情况 */
+	/* 解决原因，因为全局样式里定义了margin自动居中，有冲突 */
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	padding-right: 20px;
+	background-color: #fff;
+}
+.subnav:hover {
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.subnav li {
+	padding: 0 30px;
+	display: inline;
+}
+.subnav li a {
+	transition: all 0.2s;
+	font-size: 16px;
+	color: #050505;
+}
+.subnav li a:hover {
+	font-weight: 700;
+	color: #00a4ff;
+}
+.subnav span {
+	display: inline-block ;
+	height: 16px;
+	width: 1px;
+	background-color: #ccc;
+	vertical-align: middle;
+}
+.subnav .edit a {
+	font-size: 14px;
+	color: #00a4ff;
+}
+
+	/* <!-- main start --> */
+.main {
+	margin: 10px auto 0;
+}
+.item-t {
+	height: 60px;
+	line-height: 60px;
+	/* background-color: pink; */
+	padding-right: 25px;
+}
+.item-t span{
+	font-size: 20px;
+	color: #494949;
+}
+.item-t a {
+	font-size: 12px;
+	color: #a5a5a5;
+}
+.item {
+	width: 228px;
+	height: 270px;
+	background-color: #fff;
+	margin: 15px 15px 0 0 ;
+	
+	transition: all 0.5s;
+	float: left;
+}
+.item img {
+	transition: all 0.5s;
+	
+}
+.item:hover {
+	transform: translate(0,-5px);
+	box-shadow: 0 15px 15px rgba(0,0,0,0.2);
+}
+.item:hover img {
+	transform: scale(1.1);
+}
+.item:nth-child(5n) {
+	margin: 15px 0 0 0 ;
+}
+.item>span {
+	display: inline-block;
+	overflow: hidden;
+	height: 155px;
+	width: 228px;
+}
+.item-c img {
+	height: 155px;
+	width: 228px;
+}
+.item-f {
+	padding: 22px 20px 0 ;
+
+}
+.item-f a span {
+	display: block;
+	font-size: 14px;
+	color: #050505;
+}
+.item-f > span {
+	display: inline-block;
+	padding-top: 15px;
+	font-size: 12px;
+	color: #999;
+}
+
+.item-f > span:nth-child(2) {
+	color: #ff7c2d;
+}
+.item-f > span:nth-child(2) {
+	padding-right: 0 5px;
+}
+
+	/* <!-- footer start --> */
+
+footer {
+	margin-top: 35px;
+	background-color: #fff;
+	height: 420px;
+}
+.footer-inner {
+	padding: 30px 30px 0;
+	margin: 0 auto;
+}
+.footer-l p {
+	display: block;
+	margin: 30px 0;
+}
+.footer-l .app {
+	font-size: 16px;
+	color: #00a4ff;
+	width: 118px;
+	height: 36px;
+	border: 1px solid #00a4ff ; 
+	line-height: 36px;
+	text-align: center;
+}
+.footer-l .logo {
+	display: block;
+}
+.footer-r dl{
+	margin-left: 120px;
+	float: right;
+}
+.footer-r dt {
+	font: 16px '微软雅黑';
+	color: #666;
+}
+.footer-r dd {
+	margin-top: 10px;
+	font: 12px '宋体';
+	color: #333;
+}
